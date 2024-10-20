@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
       <div>
@@ -19,33 +20,116 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm a full stack developer with experience in building modern web
-          applications and backend systems.
+          I'm a self taught software engineer from New Jersey, with experience
+          in building modern web applications and backend systems.
         </p>
+        <div>
+          <h3 class="project-title">Things I'm working on now:</h3>
+          <ul>
+            <li>Pursuing a degree in Computer Science.</li>
+            <li>
+              Completing the
+              <a
+                href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
+                >AWS Cloud Practitioner Certification</a
+              >.
+            </li>
+            <li>Tinkering with my home server.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="project-title">Things I Know:</h3>
+          <ul>
+            <li>Javascript/Typescript, and frameworks like React.</li>
+            <li>Rust!</li>
+            <li>SQL and database design.</li>
+            <li>Containerization using Docker.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
           <div class="project">
-            <h3>Project 1</h3>
+            <h3 class="project-title">
+              <a href="https://brawlhub.net"
+                >Brawlhub.net
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="1rem"
+                  height="1rem"
+                  viewBox="0 0 26 26"
+                >
+                  <path
+                    d="M 12.3125 0 C 10.425781 0.00390625 10.566406 0.507813 11.5625 1.5 L 14.78125 4.71875 L 9.25 10.25 C 8.105469 11.394531 8.105469 13.230469 9.25 14.375 L 11.6875 16.78125 C 12.832031 17.921875 14.667969 17.925781 15.8125 16.78125 L 21.34375 11.28125 L 24.5 14.4375 C 25.601563 15.539063 26 15.574219 26 13.6875 L 26 3.40625 C 26 -0.03125 26.035156 0 22.59375 0 Z M 4.875 5 C 2.183594 5 0 7.183594 0 9.875 L 0 21.125 C 0 23.816406 2.183594 26 4.875 26 L 16.125 26 C 18.816406 26 21 23.816406 21 21.125 L 21 14.75 L 18 17.75 L 18 21.125 C 18 22.160156 17.160156 23 16.125 23 L 4.875 23 C 3.839844 23 3 22.160156 3 21.125 L 3 9.875 C 3 8.839844 3.839844 8 4.875 8 L 8.3125 8 L 11.3125 5 Z"
+                  ></path>
+                </svg>
+              </a>
+            </h3>
+            <h4>Rust | NextJs | PostgreSQL</h4>
             <p>
-              A brief description of your project, what you built it with, and
-              what it does.
+              Brawlhub is a web platform designed for players of the Magic: the
+              Gathering (MTG) Arena Brawl format. It enables users to explore
+              all legal commanders in the format, and showcases the most
+              commonly played and synergistic cards associated with each
+              commander.
+            </p>
+            <!-- <p>Key features include:</p>
+            <ul>
+              <li>
+                Commander Database: Users can view a complete list of legal
+                commanders, organized by their popularity.
+              </li>
+              <li>
+                Card Insights: For each commander, Brawlhub highlights the most
+                commonly played and synergistic cards.
+              </li>
+              <li>
+                Color Trends: Brawlhub highlights the most popular cards and
+                commanders for each color identity.
+              </li>
+            </ul> -->
+          </div>
+          <div class="project">
+            <h3 class="project-title">
+              <a href="https://StatelyHylandApiaries.com"
+                >StatelyHylandApiaries.com
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="1rem"
+                  height="1rem"
+                  viewBox="0 0 26 26"
+                >
+                  <path
+                    d="M 12.3125 0 C 10.425781 0.00390625 10.566406 0.507813 11.5625 1.5 L 14.78125 4.71875 L 9.25 10.25 C 8.105469 11.394531 8.105469 13.230469 9.25 14.375 L 11.6875 16.78125 C 12.832031 17.921875 14.667969 17.925781 15.8125 16.78125 L 21.34375 11.28125 L 24.5 14.4375 C 25.601563 15.539063 26 15.574219 26 13.6875 L 26 3.40625 C 26 -0.03125 26.035156 0 22.59375 0 Z M 4.875 5 C 2.183594 5 0 7.183594 0 9.875 L 0 21.125 C 0 23.816406 2.183594 26 4.875 26 L 16.125 26 C 18.816406 26 21 23.816406 21 21.125 L 21 14.75 L 18 17.75 L 18 21.125 C 18 22.160156 17.160156 23 16.125 23 L 4.875 23 C 3.839844 23 3 22.160156 3 21.125 L 3 9.875 C 3 8.839844 3.839844 8 4.875 8 L 8.3125 8 L 11.3125 5 Z"
+                  ></path>
+                </svg>
+              </a>
+            </h3>
+            <h4>Typescript | NextJs | TailwindCSS</h4>
+            <p>
+              Stately Hyland Apiaries LLC is a small beekeeping business based
+              in Northeastern New Jersey. The website serves as the business’s
+              online storefront and blog, built using Next.js with static
+              generation. It integrates the Stripe API for product management
+              and payment processing and features blog posts written in a
+              self-hosted Sanity Content Studio. Styled with TailwindCSS, the
+              site is mobile-first and built with custom components.
             </p>
           </div>
           <div class="project">
-            <h3>Project 2</h3>
+            <h3 class="project-title">Home Server</h3>
+            <h4>Proxmox | Docker | NGINX</h4>
             <p>
-              A brief description of your project, what you built it with, and
-              what it does.
-            </p>
-          </div>
-          <div class="project">
-            <h3>Project 3</h3>
-            <p>
-              A brief description of your project, what you built it with, and
-              what it does.
+              I built and maintain a home server to host various services,
+              including home automation, file storage, and a remote development
+              environment. It leverages NGINX as a web server and reverse proxy,
+              with SSL certificates managed by Certbot for secure remote access.
             </p>
           </div>
         </div>
@@ -54,15 +138,35 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:terrence@example.com">terrence@example.com</a>
+          Email:
+          <a href="mailto:terrencehyland@gmail.com">terrencehyland@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/terrence-hyland">LinkedIn Profile</a>
+        </p>
+        <p>
+          Github:
+          <a href="https://github.com/terrhy999">Github Profile</a>
         </p>
       </section>
     </main>
 
     <footer>
       <div>
-        <p>&copy; 2024 Terrence Hyland. All rights reserved.</p>
+        <p>
+          &copy; <span id="current-year"></span> Terrence Hyland. All rights
+          reserved.
+        </p>
+        <a target="_blank" href="https://icons8.com/icon/741/external-link"
+          >External Link</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>
     </footer>
   </body>
 </html>
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>

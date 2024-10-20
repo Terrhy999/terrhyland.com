@@ -1,5 +1,98 @@
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: #372f2f;
+}
+
+::-webkit-scrollbar {
+  /* WebKit */
+  display: none;
+}
+
 body {
+  background-color: #faf7f0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100vh;
+}
+
+header,
+footer {
+  background-color: #b17457;
+  width: 100vw;
+  color: black;
+}
+
+header div,
+footer div {
+  margin: 1rem;
+}
+
+header div h1,
+header div p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  flex-grow: 1;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #372f2f;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+}
+
+h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-grid {
+  margin-top: 1rem;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.project h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  color: #4a4947;
+}
+
+.project-title {
+  /* font-size: 1.25em; */
+  margin: 0;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
 }
